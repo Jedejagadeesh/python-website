@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to python coding</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <h1 class="py">Welcome to python coding</h1>
+    <div class="pyt">
+        <a><</a>  
+        <a>/</a>
+        <a>></a>
+    </div>
+    <div class="main">
+        <nav>
+            <a onclick="showSection('home')">Home</a>
+            <a onclick="showSection('about')">About_us</a>
+            <a onclick="showSection('service')">Service</a>
+            <a onclick="showSection('achi')">quiz</a>
+        </nav>
+    </div>
+    <div class="item" id="home">
+        <div class="pyth">
+        <div class="matter">
+            <h1>This is python Language</h1>
+            <p>This language is more interested & easy to learn everyone<br>to design this language user based..!<br>
+            u want to learn this language</p>
+            <button onclick="jagga()" class="btn">Learn More</button>
+        </div>
+        <div class="a">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.c5TMgljZ5EODDlN_0HoioQHaFj&pid=Api&P=0&h=180" alt="Python Image" class="python_image">
+        </div>
+        </div>
+    </div>
+    <div class="item" id="achi">
+        <h1>Making quiz app</h1>
+        <div class="hlos">
+            <div id="p1"></div>
+            <div id="p2" onclick="checkAnswer('p2')"></div>
+            <div id="p3" onclick="checkAnswer('p3')"></div>
+            <div id="p4" onclick="checkAnswer('p4')"></div>
+            <div id="p5" onclick="checkAnswer('p5')"></div>
+        </div>
+        <button onclick="nextQuestion()">Next</button>
+        <div class="answer">Correct: 0</div>
+    </div>
+    <div class="item" id="service">
+        <h2 style="margin-left: 400px;">Welcome to python coding language</h2>
+        <div class="div1">
+            <details>
+                <summary>syllabus</summary>
+                <p onclick="mawa('p1')">Python Intro</p>
+                <p onclick="mawa('p2')">Python Get Started</p>
+                <p onclick="mawa('p3')">Python Syntax</p>
+                <p onclick="mawa('p4')">Python Comments</p>
+                <p onclick="mawa('p5')">Python Variables</p>
+                <p onclick="mawa('p6')">Python Data Types</p>
+                <p onclick="mawa('p7')">Python Numbers</p>
+                <p onclick="mawa('p8')">Python Strings</p>
+                <p onclick="mawa('p9')">Python Booleans</p>
+                <p onclick="mawa('p10')">Python Operators</p>
+                <p onclick="mawa('p11')">Python Lists</p>
+                <p onclick="mawa('p12')">Python If...Else</p>
+                <p onclick="mawa('p13')">Python While Loops</p>
+                <p onclick="mawa('p14')">Python For Loops</p>
+                <p onclick="mawa('p15')">Python Functions</p>
+                <p onclick="mawa('p16')">Python Arrays</p>
+            </details>
+        </div>
+        <div id="center"></div>
+        <div class="main_function">
+            <div id="section" class="p1">
+                <h3 class="headings">python introduction</h3>
+                <p>What is Python?
+                    Python is a popular programming language.<br> It was created by Guido van Rossum, and released in 1991.<br>
+                    
+                    It is used for:<br>
+                    
+                    web development (server-side),
+                    software development,
+                    mathematics,
+                    system scripting.<br>
+                    What can Python do?<br>
+                    Python can be used on a server to create web applications.<br>
+                    Python can connect to database systems. It can also read and modify files.<br>
+                    Python can be used to handle big data and perform complex mathematics.<br>
+                    Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).<br>
+                    Python has a simple syntax similar to the English language.
+                   </p>
+            </div>
+            <div class="p2">
+                <h1 class="headings">Python Install</h1>
+                Many PCs and Macs will have python already installed.
+
+                To check if you have python installed on a Windows PC, <br>
+                search in the start bar for Python or run the following on the Command Line (cmd.exe):<br>
+
+                <a href="#">C:\Users\Your Name>python --version</a><br>
+                To check if you have python installed on a Linux or Mac, <br>then on linux open the command line or on Mac open the Terminal and type:<br>
+
+                <h3 class="headings">python --version</h3><br>
+                If you find that you do not have Python installed on your computer, <br>then you can download it for free from the following website:<br><a href="#"> https://www.python.org/</a></a>
+            </div>
+            <div class="p3">
+                <h3>Execute Python Syntax</h3>
+                Python syntax can be executed by writing directly in the Command Line:<br>
+
+                >>> print("Hello, World!")<br>
+                Hello, World!<br>
+                On this page<br>
+                Execute Python Syntax<br>
+                Python Indentation<br>
+                <br> using the .py file extension, and running it in the Command Line:
+
+                <a href="#">C:\Users\Your Name>python myfile.py</a><br>
+                <h2 class="headings">Python Indentation</h2><br>
+                Indentation refers to the spaces at the beginning of a code line.<br>
+
+                Where in other programming languages <br>the indentation in code is for readability only, the indentation in Python is very important.<br>
+                Python uses indentation to indicate a block of code.
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">example code:</h4>
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">code:</h4>
+                if 5 > 2:<br>
+                print("Five is greater than two!")
+                <p><b>output:</b>Five is greater than two!</p>
+            </div>
+            <div class="p4">
+                <h1 class="headings">Python Comments</h1>
+                Comments can be used to explain Python code.<br>
+                Comments can be used to make the code more readable.<br>
+                Comments can be used to prevent execution when testing code.<br>
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Creating a Comment</h4>
+                Comments starts with a #, and Python will ignore them:<br>
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Example code:</h4>
+                #This is a comment.
+                print("Hello, World!")
+                <h2 class="headings">Multiline Comments</h2>
+                Python does not really have a syntax for multiline comments.<br>
+                To add a multiline comment you could insert a # for each line:<br>
+                <h3 class="headings">Example code</h3><br>
+                #This is a comment<br>
+                #written in<br>
+                #more than just one line<br>
+                print("Hello, World!") 
+            </div>
+            <div class="p5">
+                <h1 class="headings">Variables</h1>
+                Variables are containers for storing data values.
+                <h1 class="headings">Creating Variables</h1>
+                Python has no command for declaring a variable.<br>
+                A variable is created the moment you first assign a value to it.
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Example code:</h4>
+                x = 5<br>
+                y = "John"<br>
+                print(x)<br>
+                print(y) # x = 5
+                y = "John"
+                print(x)
+                print(y)<br>
+                <h2>Casting</h2>
+                If you want to specify the data type of a variable, this can be done with casting.<br>
+                <h3 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Example:</h3>
+                x = str(3)    # x will be '3'<br>
+                y = int(3)    # y will be 3<br>
+                z = float(3)  # z will be 3.0<br>
+                print(x,y,z) <h4>output:</h4> #3,3,3.0<br>
+                <h3 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Single or Double Quotes?</h3>
+                String variables can be declared either by using single or double quotes:<br>
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Example output</h4>
+                x = "John"<br>
+                print(x)<br>
+                #double quotes are the same as single quotes:<br>
+                x = 'John'<br>
+                print(x)<br>
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">output</h4>
+                John<br>
+                John
+            </div>
+            <div class="p6">
+                <h1 class="headings">Built-in Data Types</h1>
+                In programming, data type is an important concept.<br>
+                Variables can store data of different types,<br> and different types can do different things.<br>
+                Python has the following data types built-in by default,<br> in these categories:<br>
+                Text Type:	str<br>
+                Numeric Types:	int, float, complex<br>
+                Sequence Types:	list, tuple, range<br>
+                Mapping Type:	dict<br>
+                Set Types:	set, frozenset<br>
+                Boolean Type:	bool<br>
+                Binary Types:	bytes, bytearray, memoryview<br>
+                None Type:	NoneType<br>
+            </div>
+            <div class="p7">
+                <h2 class="headings">Python Numbers</h2><br>
+                There are three numeric types in Python:<br>
+                int<br>
+                float<br>
+                complex<br>
+                Variables of numeric types are created when you assign a value to them:<br>
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Example code</h4>
+                x = 1<br>
+                y = 2.8<br>
+                z = 1j<br>
+                print(type(x))<br>
+                print(type(y))<br>
+                print(type(z))<br>
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">output</h4>
+                "class 'int'><br>
+                "class 'float'><br>
+                "class 'complex'><br>
+                <h2 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Int</h2>
+                Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.<br>
+                <h2 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Float</h2>
+                Float, or "floating point number" is a number, positive or negative, containing one or more decimals.<br>
+                <h2 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Complex</h2>
+                Complex numbers are written with a "j" as the imaginary part:
+            </div>
+            <div class="p8">
+                <h2 class="headings">Python Strings</h2>
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Strings</h4>
+                Strings in python are surrounded by either single quotation marks, or double quotation marks.<br>
+                'hello' is the same as "hello".<br>
+                You can display a string literal with the print() function:<br>
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Example code</h4>
+                print("Hello")<br>
+                print('Hello')<br>
+                <h5 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">output:-><br>
+                Hello<br>
+                Hello</h5>
+            </div>
+            <div class="p9">
+                <h1 class="headings">Python Booleans</h1>
+                Booleans represent one of two values: True or False.<br>
+                <h3 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Boolean Values</h3>
+                In programming you often need to know if an expression is True or False.<br>
+                You can evaluate any expression in Python, and get one of two answers, True or False.<br>
+                When you compare two values, the expression is evaluated and Python returns the Boolean answer:<br>
+                <h2 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">example code:</h2>
+                print(10 > 9) #true<br>
+                print(10 == 9) #false<br>
+                print(10 < 9)#false<br>
+            </div>
+            <div class="p10">
+                <h1 class="headings">Python Operators</h1>
+                Python Operators<br>
+                Operators are used to perform operations on variables and values.<br>
+                In the example below, we use the + operator to add together two values:<br>
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Example code</h4>
+                print(10 + 5) #15;<br>
+                <h2 class="headings">Types of operators</h2>
+                Arithmetic operators<br>
+                Assignment operators<br>
+                Comparison operators<br>
+                Logical operators<br>
+                Identity operators<br>
+                Membership operators<br>
+                Bitwise operators
+            </div>
+            <div class="p11">
+                <h1 class="headings">List</h1>
+                Lists are used to store multiple items in a single variable.
+                Lists are one of 4 built-in data types in Python used to store collections of data,<br> the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+                Lists are created using square brackets:
+                <h2 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Example code:</h2>
+                Result Size: 625 x 430<br>
+                thislist = ["apple", "banana", "cherry"]<br>
+                print(thislist)<br>
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">output:</h4>
+                ['apple', 'banana', 'cherry']
+            </div>
+            <div class="p12">
+                <h1 class="headings">Python If ... Else</h1>
+                <h3 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Python Conditions and If statements</h3><br>
+                Python supports the usual logical conditions from mathematics:<br>
+                Equals: a == b<br>
+                Not Equals: a != b<br>
+                Less than: a < b<br>
+                Less than or equal to: a <= b<br>
+                Greater than: a > b<br>
+                Greater than or equal to: a >= b<br>
+                These conditions can be used in several ways, most commonly in "if statements" and loops.<br>
+                An "if statement" is written by using the if keyword.<br>
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">example code:</h4>
+                a = 33<br>
+                b = 200<br>
+                if b > a:<br>
+                print("b is greater than a")<br>
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">output</h4>
+                b is greater than a
+            </div>
+            <div class="p13">
+                <h1 class="headings">Python While Loops</h1>
+                The while Loop<br>
+                With the while loop we can execute a set of statements as long as a condition is true.<br>
+                <h3 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">example code</h3>
+                i = 1<br>
+                while i < 6:<br>
+                print(i)<br>
+                i += 1
+                <h3 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">output</h3>
+                1
+                2
+                3
+                4
+                5
+            </div>
+            <div class="p14">
+                <h1 class="headings">Python For Loops</h1>
+                A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).<br>
+                This is less like the for keyword in other programming languages, <br>
+                and works more like an iterator method as found in other object-orientated programming languages.<br>
+                With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+                <h2 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Example code</h2>
+                fruits = ["apple", "banana", "cherry"]<br>
+                for x in fruits:<br>
+                print(x) 
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">output</h4>
+                apple<br>
+                banana<br>
+                cherry
+            </div>
+            <div class="p15">
+                <h1 class="headings">Python Functions</h1>
+                A function is a block of code which only runs when it is called.<br>
+                You can pass data, known as parameters, into a function.<br>
+                A function can return data as a result.<br>
+                <h2 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Creating a Function</h2>
+                In Python a function is defined using the def keyword:<br>
+                <h2 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">Example code</h2>
+                def my_function():<br>
+                print("Hello from a function")<br>
+                my_function()
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">output:</h4>
+                hello from a function
+            </div>
+            <div class="p16">
+                <h1 class="headings">Array</h1>
+                An array is a special variable, which can hold more than one value at a time.<br>
+                If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:<br>
+                <h2 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">output</h2>
+                cars = ["Ford", "Volvo", "BMW"]<br>
+                x = cars[0]<br>
+                print(x)
+                <h4 style="color:black;font-size: larger;font-weight: bolder;font-style: italic;">output</h4>
+                ford
+            </div>
+        </div>
+    </div>
+    <div class="item" id="about">
+        <h1>About_us</h1>
+        <div class="about_us">
+            <img src="Downloads/jagga.jpeg" class="image">
+            <div class="image1">
+                <div class="tex1"><h1 style="color: rgb(229, 153, 11);">My self jagadeesh</h1>
+            Im coming from tadipatri..!My <del style="color: rgb(85, 238, 238);font-size: large;font-style: italic;">coding</del> journey started at btech <span style="color: chartreuse;font-size: larger;">1st year</span><br>
+            In starting days i dont have any idea about this one..<br>slowly slowly im improving my skills<br>
+            Im follow some youtube channel's..<br>And also im pratice my coding in using some websites<br> like<span style="color:coral;font-size: larger;">("leetcode","hackerrank","codecheaf")</span><br>
+            I know some language's<br> that is python and frontend<span style="color: deeppink;font-size: larger;">("html","css","javascript")</span> languages;<br>
+            one thing u remembing be focus on ur skills..lets u also do it in that one's<br>U put 100% efforts on this one..!
+            </div>
+            <footer>
+                <div class="x1">
+                    <h1 style="text-align: center;color: burlywood;font-size: larger;font-family: cursive;">Contact_us</h1>
+                      <p style="margin-left: 30px;margin-top: 70px;"><span style="color: aqua;">Name</span>:Jede jagadeesheswar<br>
+                      <span style="color:aqua">phoneno</span>:7093885812<br>
+                      <span style="color: aqua;">Address</span>:tadipatri near at anthapuram district...!</p>
+                </div>
+                <div><h1 style="color:rgb(204, 130, 19)">Email_Id</h1>
+                jadejagadeesh490@gmail.com<br>
+                 jadejagadeesh0@gmail.com<br>
+                I have two email's</div>
+            </footer>
+            </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
